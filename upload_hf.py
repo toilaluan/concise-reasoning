@@ -6,7 +6,7 @@ with open("compressed_items.json", "r") as f:
 
 dataset = Dataset.from_list(items)
 
-dataset.map(
+dataset = dataset.map(
     lambda x: {
         "messages": [
             {"role": "user", "content": x["user_message"]},
