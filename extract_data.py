@@ -4,7 +4,7 @@ import tqdm
 
 DS = load_dataset("open-r1/OpenR1-Math-220k", "default", split="train", num_proc=10)
 
-DS = DS.shuffle(seed=42).select(range(1000))
+DS = DS.shuffle(seed=42).select(range(50000))
 preprocessed_items = []
 
 for item in tqdm.tqdm(DS):
