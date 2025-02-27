@@ -13,7 +13,7 @@ def compress_text(
 ) -> str:
     compressed_prompt = LLM_LINGUA.compress_prompt(
         text, rate=rate, force_tokens=force_tokens
-    )
+    )["compressed_prompt"]
     return compressed_prompt
 
 
